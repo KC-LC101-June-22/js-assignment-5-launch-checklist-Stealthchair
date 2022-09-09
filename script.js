@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
    list.style.visibility = "hidden";
    
     let scriptElement = window.document.createElement("script");
-    scriptElement.textContent = "myBundle.js";
+    scriptElement.src = "myBundle.js";
     window.document.head.appendChild(scriptElement);
    
    let listedPlanets;
