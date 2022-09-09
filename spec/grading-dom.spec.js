@@ -38,6 +38,9 @@ describe ("GRADING DOM MANIPULATION TEST: ", function () {
           list = screen.getByTestId(container, "faultyItems");
           console.log("Style: " + JSON.stringify(list.style, null, 4));
           console.log("Computed Style: " + JSON.stringify(window.getComputedStyle(list), null, 4));
+         list.style.visibility = "hidden";
+         console.log("Style post manual setting: " + JSON.stringify(list.style, null, 4));
+          console.log("Computed Style post manual setting: " + JSON.stringify(window.getComputedStyle(list), null, 4));
           h2 = screen.getByTestId(container, "launchStatus");
           pilotStatus = screen.getByTestId(container, "pilotStatus");
           copilotStatus = screen.getByTestId(container, "copilotStatus");
