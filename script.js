@@ -3,7 +3,7 @@
 //require('./scriptHelper.js')
 
 window.addEventListener("load", function() {
-  Let list = document.getElementById("faultyItems");
+  let list = document.getElementById("faultyItems");
     list.style.visibility = "hidden";
  let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
