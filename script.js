@@ -1,6 +1,7 @@
 // Write your JavaScript code here!
 //import {addDestinationInfo, validateInput, formSubmission, pickPlanet, myFetch} from "./scriptHelper.js"
 //require('./scriptHelper.js')
+require('isomorphic-fetch');
 
 window.addEventListener("load", function() {
    let list = document.getElementById("faultyItems");
