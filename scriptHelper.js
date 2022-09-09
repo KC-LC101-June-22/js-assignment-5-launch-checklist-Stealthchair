@@ -129,6 +129,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     return returnObject;
 }
 
+/*
 async function myFetch() {
     let planetsReturned;
 
@@ -137,6 +138,31 @@ async function myFetch() {
     });
 
     return planetsReturned;
+}
+*/
+
+async function myFetch(){
+   //let planetsReturned;
+   
+   //Below code from https://javascript.plainenglish.io/comparing-different-ways-to-make-http-requests-in-javascript-39ab0f090788
+   var req = new XMLHttpRequest();
+//The onreadystatechange property
+//specifies a function to be 
+//executed every time the status
+//of the XMLHttpRequest changes
+req.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       //The responseText property
+       //returns a text string           
+       console.log(xhttp.responseText)
+       //Do some stuff
+    }
+};
+req.open("GET", "https://handlers.education.launchcode.org/static/planets.json", true);
+req.send();
+   
+ return req.response;
+   
 }
 
 function pickPlanet(planets) {
