@@ -1,6 +1,6 @@
 // Write your JavaScript code here!
 //import {addDestinationInfo, validateInput, formSubmission, pickPlanet, myFetch} from "./scriptHelper.js"
-require('./scriptHelper.js')
+//require('./scriptHelper.js')
 
 window.addEventListener("load", function() {
    let listedPlanets;
