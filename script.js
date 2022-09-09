@@ -3,6 +3,8 @@
 //require('./scriptHelper.js')
 
 window.addEventListener("load", function() {
+   let list = document.getElementById("faultyItems");
+   list.style.visibility = "hidden";
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
    let listedPlanetsResponse = myFetch();
@@ -20,9 +22,7 @@ window.addEventListener("load", function() {
    
    let goodToSubmit = document.querySelector("form");
    goodToSubmit.addEventListener("submit", function(event){
-      //Name elements for readability
-    let list = document.getElementById("faultyItems");
-    list.style.visibility = "hidden";
+    //Name elements for readability
     let pilotName = document.getElementsByName("pilotName")[0];
     let copilotName = document.getElementsByName("copilotName")[0];
     let fuelLevel = document.getElementsByName("fuelLevel")[0];
