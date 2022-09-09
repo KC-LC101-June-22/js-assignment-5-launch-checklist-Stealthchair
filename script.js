@@ -5,6 +5,11 @@
 window.addEventListener("load", function() {
    let list = document.getElementById("faultyItems");
    list.style.visibility = "hidden";
+   
+    let scriptElement = window.document.createElement("script");
+    scriptElement.textContent = "myBundle.js";
+    window.document.head.appendChild(scriptElement);
+   
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
    let listedPlanetsResponse = myFetch();
